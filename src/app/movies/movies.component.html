@@ -1,3 +1,6 @@
-<div *ngFor="let m of movies">
-
+<div *ngFor="let m of movies" class="movie-container">
+    {{m.title}}({{m.year}})
+    <br> {{m.genre}}
+    <br> {{m.overview}}
+    <br> {{m.rating}}
 </div>
