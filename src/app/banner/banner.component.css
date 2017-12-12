@@ -1,4 +1,38 @@
 .wrapper{
+    position: relative;
     background-color: #000080;
-    height: 100px;
+    width: 100vw;
+}
+
+.main-heading{
+    color: #EE00CC;
+}
+
+
+
+/* NAVIGATION BAR START*/
+.nav-bar{
+    color: white;
+    list-style-type: none;
+}
+
+.nav-item{
+    display: block;
+    float: right;
+    padding: 8px 6px;
+    
+    text-decoration: none;
+    border-bottom-width: 2px;
+    margin: 1px;
+}
+
+.nav-item:hover{
+    color: #EE00CC;
+    border-bottom-width: 2px;
+    border-bottom-color: #EE00CC;
+}
+/* NAVIGATION BAR END*/
+
+.float-right{
+    float: right;
 }

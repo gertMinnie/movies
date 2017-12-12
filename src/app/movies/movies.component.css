@@ -1,3 +1,10 @@
 .movie-container{
-    
+    float: left;
+
+    width: 400px;
+    height: 130px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 20px;
+    background-color: #000080;
 }
