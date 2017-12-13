@@ -8,6 +8,9 @@ import { BannerComponent } from './banner/banner.component';
 import { MoviesListComponent } from './movies-list/movies-list.component';
 import { MoviesComponent } from './movies/movies.component';
 
+import { MovieService } from './movie.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +23,7 @@ import { MoviesComponent } from './movies/movies.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [MovieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

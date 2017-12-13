@@ -1,3 +1,4 @@
+import { MovieService } from './../movie.service';
 import { Component, OnInit } from '@angular/core';
 import { Movie } from 'app/classes/movie.class';
 
@@ -7,21 +8,17 @@ import { Movie } from 'app/classes/movie.class';
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
-  movies: Movie[] = [];
 
-  constructor() { }
+  movies: Movie[];
+
+  constructor(private movieService: MovieService) { }
 
   ngOnInit() {
-    
-
-    for(var i = 0; i< 10; i++){
-      this.movies.push(production);
-    }
+    this.getMovies();
   }
 
-  // Setting a mock movie to get layout of site going is all
-  
-
-
+  getMovies(): void {
+    this.movies = this.movieService.getMovies();
+  }
 
 }
